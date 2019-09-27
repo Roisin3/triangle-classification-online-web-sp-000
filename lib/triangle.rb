@@ -26,6 +26,7 @@ class Triangle
   
   class TriangleError < StandardError
   end
+  
 end
 
 Triangle.new(0, 0, 0)
