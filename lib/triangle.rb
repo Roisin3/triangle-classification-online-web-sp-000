@@ -8,9 +8,10 @@ class Triangle
   end
   
   def kind
-    if a == b && b == c
+    if side_one == side_two && side_two == side_three
       :equilateral
-    elsif 
+    elsif side_one == side_two && side_two != side_three
+      :iso
   
   
   
