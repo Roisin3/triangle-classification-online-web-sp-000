@@ -28,4 +28,3 @@ class Triangle
   
 end
 
-Triangle.new(0, 0, 0)
