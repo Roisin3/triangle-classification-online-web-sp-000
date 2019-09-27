@@ -7,6 +7,11 @@ class Triangle
     @side_three = side_three
   end
   
+  def kind
+    if a == b && b == c
+      :equilateral
+    elsif 
+  
   
   
   class TriangleError < StandardError
