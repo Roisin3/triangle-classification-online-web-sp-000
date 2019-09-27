@@ -17,10 +17,10 @@ class Triangle
     end
   end
   
-  def validate
-    valid_triangle = [(side_one + side_two > side_three), (side_one + side_three > side_two), (side_two + side_three > side_one)]
-    [side_one, side_two, side_three].each { |x| valid_triangle << false if x <= 0 }
-    raise TriangleError if valid_triangle.include?(false)
+  def validate_triangle
+    real_triangle = [(a + b > c), (a + c > b), (b + c > a)]
+    [a, b, c].each { |s| real_triangle << false if s <= 0 }
+    raise TriangleError if real_triangle.include?(false)
   end
   
   class TriangleError < StandardError
